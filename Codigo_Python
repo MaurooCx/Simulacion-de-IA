@@ -1,0 +1,705 @@
+import sys
+import os
+
+print("1.- Congelados.")
+print("2.- Frutas o verduras.")
+print("3.- Carnes. \n")
+a=int(input("Bienvenido, ¿Que gustaria comprar? \n"))
+
+if a == 1:
+    os.system("cls")
+    print("~Congelados~\n\n")
+    print("1.- Yogurht.")
+    print("2.- Leche.")
+    print("3.- Queso. \n")
+    b=int(input("Elija su producto \n\n"))
+    if b == 1:
+        print("~YOGURHT~\n\n")
+        print("1.- Por unidades")
+        print("2.- Por caja \n")
+        ba=int(input("Elija en que presentacion desea su producto.\n"))
+        if ba == 1:
+           print("Cada uniad cuesta $2.50")
+           t=int(input("¿Cuantas unidades desea? \n"))
+           if t <= 25:
+            print("1.- Bicicleta (+ $3 en su compra final)")
+            print("2.- Motocicleta (+ $5 en su compra final)")
+            print("3.- Automovil. (+$10 en su compra final)\n")
+            p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+            if p == 1:
+                a = (t * 2.50) + 3 
+                print ("En total seria: $",a)
+            elif p == 2:
+                a = (t * 2.50) + 5
+                print ("En total seria: $",a)
+            elif p == 3:
+                a = (t * 2.50) + 10 
+                print ("En total seria: $",a)
+           elif t > 25:
+            print("1.- Motocicleta (+ $5 en su compra final)")
+            print("2.- Automovil. (+$10 en su compra final)\n")
+            p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+            if p == 1:
+                a = (t * 2.50) + 5 
+                print ("En total seria: $",a)
+            elif p == 2:
+                a = (t * 2.50) + 10
+                print ("En total seria: $",a)
+            else:
+                print("Ingresa una opcion valida \n")
+        elif ba == 2:
+           print("Cada caja tiene 12 unidades y cuesta $30.00")
+           t=int(input("¿Cuantas cajas desea? \n"))
+           if t >= 1:
+            print("1.- Motocicleta (+ $5 en su compra final)")
+            print("2.- Automovil. (+$10 en su compra final)\n")
+            print("3.- Camion. (+$15 en su compra final) \n")
+            p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+            if p == 1:
+                a = (t * 30.00) + 5 
+                print ("En total seria: $",a)
+            elif p == 2:
+                a = (t * 30.00) + 10
+                print ("En total seria: $",a)
+            elif p == 3:
+                a = (t * 30.00) + 15
+                print ("En total seria: $",a) 
+            else:
+                print("Ingresa una opcion valida \n")
+    elif b == 2:
+        print("~LECHE~\n\n")
+        print("1.- Por unidades")
+        print("2.- Por caja \n")
+        ba=int(input("Elija en que presentacion desea su producto.\n"))
+        if ba == 1:
+           print("Cada uniad cuesta $10.00")
+           t=int(input("¿Cuantas unidades desea? \n"))
+           if t <= 25:
+            print("1.- Bicicleta (+ $3 en su compra final)")
+            print("2.- Motocicleta (+ $5 en su compra final)")
+            print("3.- Automovil. (+$10 en su compra final)\n")
+            p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+            if p == 1:
+                a = (t * 10.00) + 3 
+                print ("En total seria: $",a)
+            elif p == 2:
+                a = (t * 10.00) + 5
+                print ("En total seria: $",a)
+            elif p == 3:
+                a = (t * 10.00) + 10 
+                print ("En total seria: $",a)
+           elif t > 25:
+            print("1.- Motocicleta (+ $5 en su compra final)")
+            print("2.- Automovil. (+$10 en su compra final)\n")
+            p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+            if p == 1:
+                a = (t * 10.00) + 5 
+                print ("En total seria: $",a)
+            elif p == 2:
+                a = (t * 10.00) + 10
+                print ("En total seria: $",a)
+            else:
+                print("Ingresa una opcion valida \n")
+        elif ba == 2:
+           print("Cada caja tiene 10 unidades y cuesta $100.00")
+           t=int(input("¿Cuantas cajas desea? \n"))
+           if t >= 1:
+            print("1.- Motocicleta (+ $5 en su compra final)")
+            print("2.- Automovil. (+$10 en su compra final)\n")
+            print("3.- Camion. (+$15 en su compra final) \n")
+            p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+            if p == 1:
+                a = (t * 100.00) + 5 
+                print ("En total seria: $",a)
+            elif p == 2:
+                a = (t * 100.00) + 10
+                print ("En total seria: $",a)
+            elif p == 3:
+                a = (t * 100.00) + 15
+                print ("En total seria: $",a) 
+            else:
+                print("Ingresa una opcion valida \n")
+        else:
+            print("Ingresa una opcion calida \n")
+    elif b == 3:
+        print("~QUESO~\n\n")
+        print("1.- Por Kilo")
+        print("2.- Por caja \n")
+        ba=int(input("Elija en que presentacion desea su producto.\n"))
+        if ba == 1:
+           print("Cada uniad cuesta $15.50")
+           t=int(input("¿Cuantas unidades desea? \n"))
+           if t <= 25:
+            print("1.- Bicicleta (+ $3 en su compra final)")
+            print("2.- Motocicleta (+ $5 en su compra final)")
+            print("3.- Automovil. (+$10 en su compra final)\n")
+            p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+            if p == 1:
+                a = (t * 15.50) + 3 
+                print ("En total seria: $",a)
+            elif p == 2:
+                a = (t * 15.50) + 5
+                print ("En total seria: $",a)
+            elif p == 3:
+                a = (t * 15.50) + 10 
+                print ("En total seria: $",a)
+           elif t > 25:
+            print("1.- Motocicleta (+ $5 en su compra final)")
+            print("2.- Automovil. (+$10 en su compra final)\n")
+            p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+            if p == 1:
+                a = (t * 15.50) + 5 
+                print ("En total seria: $",a)
+            elif p == 2:
+                a = (t * 15.50) + 10
+                print ("En total seria: $",a)
+            else:
+                print("Ingresa una opcion valida \n")
+        elif ba == 2:
+           print("Cada caja tiene 6 unidades y cuesta $180.00")
+           t=int(input("¿Cuantas cajas desea? \n"))
+           if t >= 1:
+            print("1.- Motocicleta (+ $5 en su compra final)")
+            print("2.- Automovil. (+$10 en su compra final)\n")
+            print("3.- Camion. (+$15 en su compra final) \n")
+            p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+            if p == 1:
+                a = (t * 180.00) + 5 
+                print ("En total seria: $",a)
+            elif p == 2:
+                a = (t * 180.00) + 10
+                print ("En total seria: $",a)
+            elif p == 3:
+                a = (t * 180.00) + 15
+                print ("En total seria: $",a) 
+            else:
+                print("Ingresa una opcion valida \n")
+        else:
+            print("Ingresa una opcion calida \n")
+    else:
+        print("Ingresa una opcion valida...")
+elif a == 2:
+    os.system("cls")
+    print("1.- Frutas.")
+    print("2.- Verduras. \n")
+    f=int(input("Elije una opcion \n"))
+    if f == 1:
+        os.system("cls")
+        print("~Frutas~\n\n")
+        print("1.- Melon.")
+        print("2.- Sandia.")
+        print("3.- Mango. \n")
+        b=int(input("Elija su producto \n\n"))
+        if b == 1:
+            print("~Melon~\n\n")
+            print("1.- Por unidades")
+            print("2.- Por caja \n")
+            ba=int(input("Elija en que presentacion desea su producto.\n"))
+            if ba == 1:
+                print("Cada uniad cuesta $6.50")
+                t=int(input("¿Cuantas unidades desea? \n"))
+                if t <= 25:
+                    print("1.- Bicicleta (+ $3 en su compra final)")
+                    print("2.- Motocicleta (+ $5 en su compra final)")
+                    print("3.- Automovil. (+$10 en su compra final)\n")
+                    p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+                    if p == 1:
+                        a = (t * 6.50) + 3 
+                        print ("En total seria: $",a)
+                    elif p == 2:
+                        a = (t * 6.50) + 5
+                        print ("En total seria: $",a)
+                    elif p == 3:
+                        a = (t * 6.50) + 10 
+                        print ("En total seria: $",a)
+                elif t > 25:
+                    print("1.- Motocicleta (+ $5 en su compra final)")
+                    print("2.- Automovil. (+$10 en su compra final)\n")
+                    p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+                    if p == 1:
+                        a = (t * 6.50) + 5 
+                        print ("En total seria: $",a)
+                    elif p == 2:
+                        a = (t * 6.50) + 10
+                        print ("En total seria: $",a)
+                else:
+                    print("Ingresa una opcion valida \n")
+            elif ba == 2:
+                print("Cada caja tiene 24 unidades y cuesta $144.00")
+                t=int(input("¿Cuantas cajas desea? \n"))
+                if t >= 1:
+                    print("1.- Motocicleta (+ $5 en su compra final)")
+                    print("2.- Automovil. (+$10 en su compra final)\n")
+                    print("3.- Camion. (+$15 en su compra final) \n")
+                    p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+                    if p == 1:
+                        a = (t * 144.00) + 5 
+                        print ("En total seria: $",a)
+                    elif p == 2:
+                        a = (t * 144.00) + 10
+                        print ("En total seria: $",a)
+                    elif p == 3:
+                        a = (t * 144.00) + 15
+                        print ("En total seria: $",a) 
+                    else:
+                        print("Ingresa una opcion valida \n")
+        elif b == 2:
+            print("~Sandia~\n\n")
+            print("1.- Por unidades")
+            print("2.- Por caja \n")
+            ba=int(input("Elija en que presentacion desea su producto.\n"))
+            if ba == 1:
+                print("Cada uniad cuesta $10.00")
+                t=int(input("¿Cuantas unidades desea? \n"))
+                if t <= 25:
+                    print("1.- Bicicleta (+ $3 en su compra final)")
+                    print("2.- Motocicleta (+ $5 en su compra final)")
+                    print("3.- Automovil. (+$10 en su compra final)\n")
+                    p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+                    if p == 1:
+                        a = (t * 10.00) + 3 
+                        print ("En total seria: $",a)
+                    elif p == 2:
+                        a = (t * 10.00) + 5
+                        print ("En total seria: $",a)
+                    elif p == 3:
+                        a = (t * 10.00) + 10 
+                        print ("En total seria: $",a)
+                elif t > 25:
+                    print("1.- Motocicleta (+ $5 en su compra final)")
+                    print("2.- Automovil. (+$10 en su compra final)\n")
+                    p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+                    if p == 1:
+                        a = (t * 10.00) + 5 
+                        print ("En total seria: $",a)
+                    elif p == 2:
+                        a = (t * 10.00) + 10
+                        print ("En total seria: $",a)
+                    else:
+                        print("Ingresa una opcion valida \n")
+            elif ba == 2:
+                print("Cada caja tiene 8 unidades y cuesta $80.00")
+                t=int(input("¿Cuantas cajas desea? \n"))
+                if t >= 1:
+                    print("1.- Motocicleta (+ $5 en su compra final)")
+                    print("2.- Automovil. (+$10 en su compra final)\n")
+                    print("3.- Camion. (+$15 en su compra final) \n")
+                    p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+                    if p == 1:
+                        a = (t * 80.00) + 5 
+                        print ("En total seria: $",a)
+                    elif p == 2:
+                        a = (t * 80.00) + 10
+                        print ("En total seria: $",a)
+                    elif p == 3:
+                        a = (t * 80.00) + 15
+                        print ("En total seria: $",a) 
+                    else:
+                        print("Ingresa una opcion valida \n")
+            else:
+                print("Ingresa una opcion calida \n")
+        elif b == 3:
+            print("~Mango~\n\n")
+            print("1.- Por Kilo")
+            print("2.- Por caja \n")
+            ba=int(input("Elija en que presentacion desea su producto.\n"))
+            if ba == 1:
+                print("Cada Kilo cuesta $12.50")
+                t=int(input("¿Cuantos kilos desea? \n"))
+                if t <= 25:
+                    print("1.- Bicicleta (+ $3 en su compra final)")
+                    print("2.- Motocicleta (+ $5 en su compra final)")
+                    print("3.- Automovil. (+$10 en su compra final)\n")
+                    p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+                    if p == 1:
+                        a = (t * 12.50) + 3 
+                        print ("En total seria: $",a)
+                    elif p == 2:
+                        a = (t * 12.50) + 5
+                        print ("En total seria: $",a)
+                    elif p == 3:
+                        a = (t * 12.50) + 10 
+                        print ("En total seria: $",a)
+                elif t > 25:
+                    print("1.- Motocicleta (+ $5 en su compra final)")
+                    print("2.- Automovil. (+$10 en su compra final)\n")
+                    p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+                    if p == 1:
+                        a = (t * 12.50) + 5 
+                        print ("En total seria: $",a)
+                    elif p == 2:
+                        a = (t * 12.50) + 10
+                        print ("En total seria: $",a)
+                    else:
+                        print("Ingresa una opcion valida \n")
+            elif ba == 2:
+                print("Cada caja tiene 25 kilos y cuesta $300.00")
+                t=int(input("¿Cuantas cajas desea? \n"))
+                if t >= 1:
+                    print("1.- Motocicleta (+ $5 en su compra final)")
+                    print("2.- Automovil. (+$10 en su compra final)\n")
+                    print("3.- Camion. (+$15 en su compra final) \n")
+                    p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+                    if p == 1:
+                        a = (t * 300.00) + 5 
+                        print ("En total seria: $",a)
+                    elif p == 2:
+                        a = (t * 300.00) + 10
+                        print ("En total seria: $",a)
+                    elif p == 3:
+                        a = (t * 300.00) + 15
+                        print ("En total seria: $",a) 
+                    else:
+                        print("Ingresa una opcion valida \n")
+            else:
+                print("Ingresa una opcion calida \n")
+        else:
+            print("Ingresa una opcion valida...")
+    elif f == 2:
+        os.system("cls")
+        print("~Verduras~\n\n")
+        print("1.- Jitomate.")
+        print("2.- Tomate.")
+        print("3.- Papa. \n")
+        b=int(input("Elija su producto \n\n"))
+        if b == 1:
+            print("~Jitomate~\n\n")
+            print("1.- Por kilos")
+            print("2.- Por caja \n")
+            ba=int(input("Elija en que presentacion desea su producto.\n"))
+            if ba == 1:
+                print("Cada kilo cuesta $6.50")
+                t=int(input("¿Cuantos kilos desea? \n"))
+                if t <= 25:
+                    print("1.- Bicicleta (+ $3 en su compra final)")
+                    print("2.- Motocicleta (+ $5 en su compra final)")
+                    print("3.- Automovil. (+$10 en su compra final)\n")
+                    p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+                    if p == 1:
+                        a = (t * 6.50) + 3 
+                        print ("En total seria: $",a)
+                    elif p == 2:
+                        a = (t * 6.50) + 5
+                        print ("En total seria: $",a)
+                    elif p == 3:
+                        a = (t * 6.50) + 10 
+                        print ("En total seria: $",a)
+                elif t > 25:
+                    print("1.- Motocicleta (+ $5 en su compra final)")
+                    print("2.- Automovil. (+$10 en su compra final)\n")
+                    p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+                    if p == 1:
+                        a = (t * 6.50) + 5 
+                        print ("En total seria: $",a)
+                    elif p == 2:
+                        a = (t * 6.50) + 10
+                        print ("En total seria: $",a)
+                else:
+                    print("Ingresa una opcion valida \n")
+            elif ba == 2:
+                print("Cada caja tiene 20 kilos y cuesta $120.00")
+                t=int(input("¿Cuantos kilos desea? \n"))
+                if t >= 1:
+                    print("1.- Motocicleta (+ $5 en su compra final)")
+                    print("2.- Automovil. (+$10 en su compra final)\n")
+                    print("3.- Camion. (+$15 en su compra final) \n")
+                    p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+                    if p == 1:
+                        a = (t * 120.00) + 5 
+                        print ("En total seria: $",a)
+                    elif p == 2:
+                        a = (t * 120.00) + 10
+                        print ("En total seria: $",a)
+                    elif p == 3:
+                        a = (t * 120.00) + 15
+                        print ("En total seria: $",a) 
+                    else:
+                        print("Ingresa una opcion valida \n")
+        elif b == 2:
+            print("~Tomate~\n\n")
+            print("1.- Por kilo")
+            print("2.- Por caja \n")
+            ba=int(input("Elija en que presentacion desea su producto.\n"))
+            if ba == 1:
+                print("Cada kilo cuesta $5.50")
+                t=int(input("¿Cuantos kilos desea? \n"))
+                if t <= 25:
+                    print("1.- Bicicleta (+ $3 en su compra final)")
+                    print("2.- Motocicleta (+ $5 en su compra final)")
+                    print("3.- Automovil. (+$10 en su compra final)\n")
+                    p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+                    if p == 1:
+                        a = (t * 5.50) + 3 
+                        print ("En total seria: $",a)
+                    elif p == 2:
+                        a = (t * 5.50) + 5
+                        print ("En total seria: $",a)
+                    elif p == 3:
+                        a = (t * 5.50) + 10 
+                        print ("En total seria: $",a)
+                elif t > 25:
+                    print("1.- Motocicleta (+ $5 en su compra final)")
+                    print("2.- Automovil. (+$10 en su compra final)\n")
+                    p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+                    if p == 1:
+                        a = (t * 5.50) + 5 
+                        print ("En total seria: $",a)
+                    elif p == 2:
+                        a = (t * 5.50) + 10
+                        print ("En total seria: $",a)
+                    else:
+                        print("Ingresa una opcion valida \n")
+            elif ba == 2:
+                print("Cada caja tiene 24 kilos y cuesta $120.00")
+                t=int(input("¿Cuantas cajas desea? \n"))
+                if t >= 1:
+                    print("1.- Motocicleta (+ $5 en su compra final)")
+                    print("2.- Automovil. (+$10 en su compra final)\n")
+                    print("3.- Camion. (+$15 en su compra final) \n")
+                    p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+                    if p == 1:
+                        a = (t * 120.00) + 5 
+                        print ("En total seria: $",a)
+                    elif p == 2:
+                        a = (t * 120.00) + 10
+                        print ("En total seria: $",a)
+                    elif p == 3:
+                        a = (t * 120.00) + 15
+                        print ("En total seria: $",a) 
+                    else:
+                        print("Ingresa una opcion valida \n")
+            else:
+                print("Ingresa una opcion calida \n")
+        elif b == 3:
+            print("~Papa~\n\n")
+            print("1.- Por Kilo")
+            print("2.- Por caja \n")
+            ba=int(input("Elija en que presentacion desea su producto.\n"))
+            if ba == 1:
+                print("Cada Kilo cuesta $9.50")
+                t=int(input("¿Cuantos kilos desea? \n"))
+                if t <= 25:
+                    print("1.- Bicicleta (+ $3 en su compra final)")
+                    print("2.- Motocicleta (+ $5 en su compra final)")
+                    print("3.- Automovil. (+$10 en su compra final)\n")
+                    p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+                    if p == 1:
+                        a = (t * 9.50) + 3 
+                        print ("En total seria: $",a)
+                    elif p == 2:
+                        a = (t * 9.50) + 5
+                        print ("En total seria: $",a)
+                    elif p == 3:
+                        a = (t * 9.50) + 10 
+                        print ("En total seria: $",a)
+                elif t > 25:
+                    print("1.- Motocicleta (+ $5 en su compra final)")
+                    print("2.- Automovil. (+$10 en su compra final)\n")
+                    p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+                    if p == 1:
+                        a = (t * 9.50) + 5 
+                        print ("En total seria: $",a)
+                    elif p == 2:
+                        a = (t * 9.50) + 10
+                        print ("En total seria: $",a)
+                    else:
+                        print("Ingresa una opcion valida \n")
+            elif ba == 2:
+                print("Cada caja tiene 25 kilos y cuesta $225.00")
+                t=int(input("¿Cuantas cajas desea? \n"))
+                if t >= 1:
+                    print("1.- Motocicleta (+ $5 en su compra final)")
+                    print("2.- Automovil. (+$10 en su compra final)\n")
+                    print("3.- Camion. (+$15 en su compra final) \n")
+                    p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+                    if p == 1:
+                        a = (t * 225.00) + 5 
+                        print ("En total seria: $",a)
+                    elif p == 2:
+                        a = (t * 225.00) + 10
+                        print ("En total seria: $",a)
+                    elif p == 3:
+                        a = (t * 225.00) + 15
+                        print ("En total seria: $",a) 
+                    else:
+                        print("Ingresa una opcion valida \n")
+            else:
+                print("Ingresa una opcion calida \n")
+        else:
+            print("Ingresa una opcion valida...")
+    else:
+        print("Ingresa una opcion valida...")
+elif a== 3:
+    os.system("cls")
+    print("~Carnes~ \n\n")
+    print("1.- Lomo.")
+    print("2.- suadero.")
+    print("3.- Costilla.")
+    c=int(input("Elije una opcion \n"))  
+    if c == 1:
+        print("~Lomo~\n\n")
+        print("1.- Por kilo")
+        print("2.- Por caja \n")
+        ba=int(input("Elija en que presentacion desea su producto.\n"))
+        if ba == 1:
+           print("Cada kilo cuesta $60.00")
+           t=int(input("¿Cuantos kilos desea? \n"))
+           if t <= 10:
+            print("1.- Bicicleta (+ $3 en su compra final)")
+            print("2.- Motocicleta (+ $5 en su compra final)")
+            print("3.- Automovil. (+$10 en su compra final)\n")
+            p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+            if p == 1:
+                a = (t * 60.00) + 3 
+                print ("En total seria: $",a)
+            elif p == 2:
+                a = (t * 60.00) + 5
+                print ("En total seria: $",a)
+            elif p == 3:
+                a = (t * 60.00) + 10 
+                print ("En total seria: $",a)
+           elif t > 10:
+            print("1.- Motocicleta (+ $5 en su compra final)")
+            print("2.- Automovil. (+$10 en su compra final)\n")
+            p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+            if p == 1:
+                a = (t * 60.00) + 5 
+                print ("En total seria: $",a)
+            elif p == 2:
+                a = (t * 60.00) + 10
+                print ("En total seria: $",a)
+            else:
+                print("Ingresa una opcion valida \n")
+        elif ba == 2:
+           print("Cada caja tiene 40 kilos y cuesta $3,000.00")
+           t=int(input("¿Cuantas cajas desea? \n"))
+           if t >= 1:
+            print("1.- Motocicleta (+ $5 en su compra final)")
+            print("2.- Automovil. (+$10 en su compra final)\n")
+            print("3.- Camion. (+$15 en su compra final) \n")
+            p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+            if p == 1:
+                a = (t * 3000.00) + 5 
+                print ("En total seria: $",a)
+            elif p == 2:
+                a = (t * 3000.00) + 10
+                print ("En total seria: $",a)
+            elif p == 3:
+                a = (t * 3000.00) + 15
+                print ("En total seria: $",a) 
+            else:
+                print("Ingresa una opcion valida \n")
+    elif c == 2:
+        print("~suadero~\n\n")
+        print("1.- Por kilo")
+        print("2.- Por caja \n")
+        ba=int(input("Elija en que presentacion desea su producto.\n"))
+        if ba == 1:
+           print("Cada kilo cuesta $70.00")
+           t=int(input("¿Cuatos kilos desea? \n"))
+           if t <= 10:
+            print("1.- Bicicleta (+ $3 en su compra final)")
+            print("2.- Motocicleta (+ $5 en su compra final)")
+            print("3.- Automovil. (+$10 en su compra final)\n")
+            p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+            if p == 1:
+                a = (t * 70.00) + 3 
+                print ("En total seria: $",a)
+            elif p == 2:
+                a = (t * 70.00) + 5
+                print ("En total seria: $",a)
+            elif p == 3:
+                a = (t * 70.00) + 10 
+                print ("En total seria: $",a)
+           elif t > 10:
+            print("1.- Motocicleta (+ $5 en su compra final)")
+            print("2.- Automovil. (+$10 en su compra final)\n")
+            p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+            if p == 1:
+                a = (t * 70.00) + 5 
+                print ("En total seria: $",a)
+            elif p == 2:
+                a = (t * 70.00) + 10
+                print ("En total seria: $",a)
+            else:
+                print("Ingresa una opcion valida \n")
+        elif ba == 2:
+           print("Cada caja tiene 25 kilos y cuesta $1725.00")
+           t=int(input("¿Cuantas cajas desea? \n"))
+           if t >= 1:
+            print("1.- Motocicleta (+ $5 en su compra final)")
+            print("2.- Automovil. (+$10 en su compra final)\n")
+            print("3.- Camion. (+$15 en su compra final) \n")
+            p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+            if p == 1:
+                a = (t * 1725.00) + 5 
+                print ("En total seria: $",a)
+            elif p == 2:
+                a = (t * 1725.00) + 10
+                print ("En total seria: $",a)
+            elif p == 3:
+                a = (t * 1725.00) + 15
+                print ("En total seria: $",a) 
+            else:
+                print("Ingresa una opcion valida \n")
+        else:
+            print("Ingresa una opcion calida \n")
+    elif c == 3:
+        print("~Costilla~\n\n")
+        print("1.- Por Kilo")
+        print("2.- Por caja \n")
+        ba=int(input("Elija en que presentacion desea su producto.\n"))
+        if ba == 1:
+           print("Cada kilo cuesta $80.00")
+           t=int(input("¿Cuantos kilos desea? \n"))
+           if t <= 10:
+            print("1.- Bicicleta (+ $3 en su compra final)")
+            print("2.- Motocicleta (+ $5 en su compra final)")
+            print("3.- Automovil. (+$10 en su compra final)\n")
+            p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+            if p == 1:
+                a = (t * 80.00) + 3 
+                print ("En total seria: $",a)
+            elif p == 2:
+                a = (t * 80.00) + 5
+                print ("En total seria: $",a)
+            elif p == 3:
+                a = (t * 80.00) + 10 
+                print ("En total seria: $",a)
+           elif t > 25:
+            print("1.- Motocicleta (+ $5 en su compra final)")
+            print("2.- Automovil. (+$10 en su compra final)\n")
+            p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+            if p == 1:
+                a = (t * 80.00) + 5 
+                print ("En total seria: $",a)
+            elif p == 2:
+                a = (t * 80.00) + 10
+                print ("En total seria: $",a)
+            else:
+                print("Ingresa una opcion valida \n")
+        elif ba == 2:
+           print("Cada caja tiene 25 kilos y cuesta $2000.00")
+           t=int(input("¿Cuantas cajas desea? \n"))
+           if t >= 1:
+            print("1.- Motocicleta (+ $5 en su compra final)")
+            print("2.- Automovil. (+$10 en su compra final)\n")
+            print("3.- Camion. (+$15 en su compra final) \n")
+            p=int(input("¿Como le gustaria que transportemos su mercancia?\n"))
+            if p == 1:
+                a = (t * 2000.00) + 5 
+                print ("En total seria: $",a)
+            elif p == 2:
+                a = (t * 2000.00) + 10
+                print ("En total seria: $",a)
+            elif p == 3:
+                a = (t * 2000.00) + 15
+                print ("En total seria: $",a) 
+            else:
+                print("Ingresa una opcion valida \n")
+        else:
+            print("Ingresa una opcion calida \n")
+    else:
+        print("Ingresa una opcion valida...")
+else:
+    print("Ingresa una opcion valida")
